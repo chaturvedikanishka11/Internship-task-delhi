@@ -1,0 +1,360 @@
+.logo{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.banner{
+    overflow: unset!important;
+}
+
+.mob-banner {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 760px) {
+    .desk-banner{
+      display: none!important;
+    }
+    .mob-banner {
+      display: block!important;
+    }
+  }
+
+.text{
+    top: 80%;
+    transform: translateY(-80%);
+    width: 50%;
+    left: 100px;
+}
+.bold{
+    font-size: 22px;
+    color: #0E0E0E;
+    letter-spacing: 1.33px;
+    line-height: 38px;
+}
+h5 h4{
+    
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 600 !important;
+    line-height: 32px;
+}
+
+
+.slider {
+    zoom: 1;
+     padding: 0px;
+}
+
+.flex-viewport{
+    position: absolute;
+}
+
+.discover {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+
+  .header{
+      background: #fff;
+  }
+  .a{
+    max-width: unset;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+/* header css */
+.find-wallpaper{
+    padding: 16px 30px;
+    box-sizing: border-box;
+    background: #7ACDC8;
+    /* font-family: Avenir-Heavy; */
+    font-size: 14px;
+    color: #FFFFFF!important;
+    letter-spacing: 1.23px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* wallpaper css */
+.wallpaper-text {
+    position: absolute;
+    top: 1069px;
+    left: 53%;
+    width: 30%;
+    transform: translate(-50%, -45%);
+}
+.side-heading {
+    font-size: 28px;
+    color: #202020;
+    margin-bottom: 14px;
+    display: inline-block;
+}
+
+.mob-wall {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 760px) {
+    .main-wall{
+      display: none!important;
+    }
+    .mob-wall {
+      display: block!important;
+    }
+  }
+  .mob-wall-text {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    color: #202020;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+/* DESIGN COLLECTION CSS */
+
+.container{
+  width:363px;
+  height: 400px;
+  position: relative;
+  padding:0px;
+  
+  
+}
+
+.image
+{
+  display: block;
+  width: 363px;
+  height:400px;
+}
+
+.overlay
+{ 
+  width: 363px;
+  height: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+
+  background:rgba(122,205,200,0.8);
+
+}
+
+.container:hover > .overlay{
+  height: 100%;
+  display: block;
+  transform-origin: bottom;
+}
+
+.atext
+{
+  color: #ffff;
+  background-color: rgb(03 31 31 / 1%);
+  font-size: 18px;
+  height: 34px;
+  width: 112px;
+  position: absolute;
+  transform: translate(133px,187px);
+  border: 1px solid rgb(128, 116, 116);
+}
+
+
+/* why wallpaper css */
+.w3-center {
+    text-align: center!important;
+}
+.homepage .heading h2 {
+    font-style: normal;
+}
+.heading h2 {
+    font-family: Avenir-Light;
+    font-size: 28px;
+    color: #202020;
+    letter-spacing: 0.83px;
+    text-align: center;
+    line-height: 38px;
+    font-weight: normal;
+}
+.w3-content {
+    max-width: 980px;
+    margin: auto;
+}
+.homepage .why-wallpaper .wallpaper-item .sub-heading {
+    background-position: left 15px top 15px;
+    background-repeat: no-repeat;
+    padding: 15px 10px;
+    background-color: rgb(248, 238, 225);
+    font-size: 12px;
+    font-family: Avenir-Light;
+    color: #202020;
+    letter-spacing: 0.83px;
+    box-sizing: border-box;
+    transition: all 0.0s ease;
+}
+.sub-heading h4 {
+    font-family: Avenir-Light!important;
+    font-size: 11px;
+    color: #202020;
+    letter-spacing: 2.4px;
+    font-weight: normal!important;
+}
+
+
+.mob-why-wallpaper{
+  display:none;
+}
+.desktop-wallpaper{
+  display: block!important;
+}
+
+@media only screen and (max-width: 760px) {
+  .desktop-wallpaper{
+    display: none!important;
+  }
+  .mob-why-wallpaper {
+    display: block!important;
+  }
+}
+
+
+.wallpaper-item {
+  background-position: center top 20px;
+  background-repeat: no-repeat;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 60px 41px 18px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  background-color: #fff;
+  cursor: pointer;
+  width:175px;
+ 
+}
+
+#bordercurve {
+  border-radius: 11px 0px 0px 11px;
+}
+
+/* MYTHS CSS */
+.myths-list{
+  padding: 40px;
+  box-sizing: border-box;
+  font-size: 20px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  font-weight: normal!important;
+}
+
+.sub-myth-text{
+  min-height: 100px;
+  font-weight: normal;
+  font-size: 20px;
+  max-height: 100px;
+  overflow: hidden;
+  line-height: 32px;
+  color: #202020;
+  letter-spacing: 2.4px;
+}
+.myth-slider{
+  margin: 20px;
+  border: #F8EEE1;
+  border-radius: 30px;
+  border-color: #F8EEE1;
+  height: 395.575px;
+  width: 373px;
+}
+
+.carousel-inner {
+  position: relative;
+  width:1518px;
+  overflow: hidden;
+  right: -25px;
+}
+
+
+.busting-container
+{
+  width:342px;
+  height: 161.35px;
+  position: relative;
+  padding:0px;
+}
+
+.busting-overlay
+{
+  width: 342px;
+  height: 0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+
+  background:rgba(122,205,200,0.8);
+}
+
+.busting-text
+{
+  color: #ffff;
+  background-color: rgb(03 31 31 / 1%);
+  font-size: 18px;
+  height: 34px;
+  width: 130px;
+  position: absolute;
+  transform: translate(98px,72px);
+  border: 1px solid #fff;
+}
+
+.busting-container:hover > .busting-overlay{
+  height: 100%;
+  display: block;
+  transform-origin: bottom;
+}
+
+
+/* Footer CSS */
+.prev-icon{
+  background: url(https://stenna.in/wp-content/themes/stenna/img/left.png) center;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    width: 40px;
+    background-color: #7ACDC8;
+    height: 70px;
+    margin-left: -193px;
+}
+
+.next-icon{
+  background: url(https://stenna.in/wp-content/themes/stenna/img/right.png) center;
+    background-repeat: no-repeat;
+    font-size: 0px;
+    background-color: #7ACDC8;
+    height: 70px;
+    width: 40px;
+    margin-right: -309px;
+}
+
+
+

@@ -9,5 +9,19 @@
 </head>
 <body>
   <app-root></app-root>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    $(window).scroll(function() {
+     if ($(this).scrollTop() >= 740) {
+         $('#header').addClass('fixed-top');
+       }
+     if ($(this).scrollTop() < 740) {
+       $('#header').removeClass('fixed-top');
+     }
+   })
+
+</script>
 </body>
 </html>
