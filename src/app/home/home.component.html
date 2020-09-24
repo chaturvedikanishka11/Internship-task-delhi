@@ -379,6 +379,7 @@
 </div>
 </div>   
 <br>
+<br>
 
 <!-- -----------------------BUSTING COMMON MYTHS------------------- -->
 
@@ -574,7 +575,7 @@
     </div>
   </div>
 
-</div> <br><br>
+</div>
 
 
 <div class="container-fluid  mobile-busting-myths">
@@ -771,6 +772,104 @@
   </div>
 
 </div> <br><br>
+
+<!-- ------------blog-------------- -->
+
+ <div class="container-fluid desktop-busting-myths">
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="blog">BLOGS</h3>
+    </div>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+ 
+  <div class="carousel-inner" >
+    <div class="carousel-item active desk-busting-carousel">
+      
+      <div  class="col-md-4 desk-myths-div"   *ngFor="let apidata of apidata" >
+        <div id="desk-myths" style="border:30px solid #F8EEE1;">
+              <div class="content" style="padding: 40px">
+                <h5 style="font-size: 26px">{{apidata.Name}}</h5>
+                <p style="font-size: 26px">{{apidata.SubName}}</p>
+                <p>{{ (apidata.Description.length>20)? (apidata.Description | slice:0:70)+'.....':(apidata.Description) }}</p>
+              </div>
+              <div class="half-image">
+                <img src="{{apidata.MainImage}}" alt="" width="310px;">
+                <div class="half-image-hover">
+                  <div class="half-image-text">
+                    <a style="text-decoration: none;" class="desk-myths-title"[routerLink]="['blog/',apidata.blogid]" 
+                    [queryParams] ="{ id : apidata.blogid }">LEARN MORE</a>
+               </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+    </div>
+  </div>
+
+
+  
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+
+
+<div class="container-fluid  mobile-busting-myths">
+  <div class="row">
+    <div class="col-md-12">
+      <h3 class="mobile-busting-text">BLOGS</h3>
+    </div>
+
+    <div class="col-md-12">
+      <div class="row">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width:100%">
+              <div class="carousel-inner">
+                 <div class="carousel-item active mob-busting-carousel">
+          <div class="col-md-4 mob-myths-div" *ngFor="let apidata of apidata">
+                <div id="mob-myths"  style="border:30px solid #F8EEE1;">
+                  <div class="content" style="padding: 40px">
+                    <h5 style="font-size: 26px">{{apidata.Name}}</h5>
+                    <p style="font-size: 26px">{{apidata.SubName}}</p>
+                    <p>{{ (apidata.Description.length>20)? (apidata.Description | slice:0:70)+'.....':(apidata.Description) }}</p>
+                  </div>
+                  <div class="half-image">
+                    <img src="{{apidata.MainImage}}" alt="" width="310px;">
+                    <div class="half-image-hover">
+                      <div class="half-image-mob-text">
+                        <a  style="text-decoration: none;" class="mob-myths-title"[routerLink]="['blog/',apidata.blogid]" 
+                        [queryParams] ="{ id : apidata.blogid }">LEARN MORE</a>
+                   </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+     </div>
+  </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators"  role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+      </div>
+    </div>
+  </div>
+
+</div> <br><br>
+
+
 
 <!-- ---------------------------FOOTER------------------------------------ -->
 

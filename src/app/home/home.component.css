@@ -562,6 +562,17 @@ h5 h4{
     padding:0px;
 }
 
+/* BLOGS CSS */
+
+.blog{
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-bottom: 33px;
+}
+
+
 /* footer css */
 
 .footer{
